@@ -28,8 +28,8 @@ function LoginPage(){
             <button className='bg-gradient-to-r from-blue-800 to bg-cyan-300 rounded-full w-80 font-semibold py-2'>Sign in</button>
           </form>
           <div className='text-zinc border-t pt-4 space-y-4 text-sm'>
-            <p>don't have an account? <Link to="signup">register</Link></p>
-            <p>you forget your password? <a href="">Reset password</a></p>
+            <p>No tienes una cuenta? <Link to="signup">registrar</Link></p>
+            <p>Olvidaste tu contrasena? <a href="">Reset password</a></p>
           </div>
         </div>
       </div>
