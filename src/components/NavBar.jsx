@@ -4,7 +4,7 @@ export default function NavBar(){
             <header className="bg-secondary">
                 <nav className="w-full flex items-center justify-between py-4">
                     <div className="pl-10">
-                        <h1 className="font-bold text-xl border-2 p-2 text-white" >OBSC</h1>
+                        <h1 className="font-bold text-xl border-2 p-2 text-white" >NASC</h1>
                     </div>
                 
                     <div className="flex px-10">

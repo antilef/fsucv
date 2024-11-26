@@ -1,17 +1,14 @@
 export default function ProductSelector(){
     return (
-        <div className="w-[400px] min-w-[200px] mt-4" >
-            <div className="relative">
-                <form action="" className="">
-                    <label htmlFor="products" className="pr-8">Selecciona tu producto</label>
-                    <select className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm rounded pl-3 pr-8 py-2" itemID="products">
-                        <option value="MAX XL">Plan l max</option>
-                        <option value="PRO MAX">PLAN MAX RRSS</option>
-                        <option value="GRAND INTER">Plan XL MAX LIBRE</option>
-                    </select>
-                </form>
-            </div>
-            
+        <div className="w-[30%] min-w-[200px] mt-10" >
+            <form action="" className="flex flex-col gap-4">
+                <label htmlFor="products" className="font-bold text-slate-600">Selecciona tu producto</label>
+                <select className="w-full border-2 bg-transparent placeholder:text-slate-400 placeholder:font-bold [&>option]:font-bold text-slate-400 text-sm rounded pl-3 pr-8 py-2" itemID="products">
+                    <option value="MAX XL">Plan L MAX</option>
+                    <option value="PRO MAX">PLAN MAX RRSS</option>
+                    <option value="GRAND INTER">Plan XL MAX LIBRE</option>
+                </select>
+            </form>
         </div>
         
     )
