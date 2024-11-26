@@ -1,41 +1,42 @@
 import { Link } from 'react-router-dom'
-import back from '../assets/back.png'
+import Login from 'src/assets/undraw.svg'
 
 
 function LoginPage(){
     return (
-        <div className='flex items-center justify-center h-screen bg-gray-300'> 
-      <div className='grid grid-cols-2 gap-20 items-center rounded-r-2xl'>
-        <div className='relative'>
-            <img src={back} alt="" />
-        </div>
-        <div className='grid max-w-100'>
-          <h1 className='text-4xl'>Bienvenido</h1>
-          <p className='my-4'>Ingresa tus datos para acceder a la administracion de tus productos</p>
-          <form action="" className='space-y-6'>
+        
+      <div className='flex flex-col lg:flex-row lg:gap-8 items-center m-auto justify-center h-screen '> 
             <div>
-              <div>
-                <i className="fa-solid fa-user"></i>
-              </div>
-              <label className='block' htmlFor="run">Rut</label>
-              <input className='py-1 px-2 rounded-full' placeholder='11111111-1' type="text"id='run'></input>
+                <img src={Login} alt="" />
             </div>
-            <div>
-              <div>
-                <i className="fa-solid fa-lock"></i>
+            <div className='flex flex-col justify-center bg-gray-100 rounded-lg px-10 py-20'>
+              <h1 className='text-5xl text-center'>Bienvenido</h1>
+              <p className='text-center text-lg w-full p-4 m-4'>Ingresa tus datos para acceder a la administracion de tus productos</p>
+              <form className='flex  flex-col space-y-6 items-center'>
+                <div>
+                    <div className='flex gap-2'>
+                        <i className="fa-solid fa-user"></i>
+                        <label className='block' htmlFor="run">Rut</label>
+                    </div>             
+                    <input className='py-1 px-2 rounded-full' placeholder='11111111-1' type="text"id='run'></input>
+                </div>
+                <div>
+                  <div className='flex gap-2'>
+                    <i className="fa-solid fa-lock"></i>
+                    <label className='block'  htmlFor="password">Password</label>
+                  </div>   
+                  <input className='py-1 px-2 rounded-full' type="password"id='password' />
+                </div>
+                <button className='bg-secondary  text-white  font-bold rounded-full w-60  py-2'>Sign in</button>
+              </form>
+              <div className='text-zinc flex flex-col items-center  pt-4 space-y-4 text-lg'>
+                <p>No tienes una cuenta? <Link to="signup">registrar</Link></p>
+                <p>Olvidaste tu contrasena? <a href="">Reset password</a></p>
               </div>
-              <label className='block'  htmlFor="password">Password</label>
-              <input className='py-1 px-2 rounded-full' type="password"id='password' />
+
             </div>
-            <button className='bg-gradient-to-r from-blue-800 to bg-cyan-300 rounded-full w-80 font-semibold py-2'>Sign in</button>
-          </form>
-          <div className='text-zinc border-t pt-4 space-y-4 text-sm'>
-            <p>No tienes una cuenta? <Link to="signup">registrar</Link></p>
-            <p>Olvidaste tu contrasena? <a href="">Reset password</a></p>
-          </div>
+            
         </div>
-      </div>
-    </div>
     )
 }
 export default LoginPage    
