@@ -1,19 +1,19 @@
 export default function NavBar(){
     return (
         <>
-            <header className="border-gray-200 bg-red-500">
-                <nav className="max-w-screen flex items-center justify-between">
-                    <div>
-                        <h1 className="px-3 py-2">Home</h1>
+            <header className="bg-secondary">
+                <nav className="w-full flex items-center justify-between py-4">
+                    <div className="pl-10">
+                        <h1 className="font-bold text-xl border-2 p-2 text-white" >OBSC</h1>
                     </div>
                 
-                    <div className="flex">
-                        <ul className="flex space-4 gap-20">
-                            <li className="rounded-full px-3 py-2 hover:bg-gray-700 hover:text-white">Boletas</li>
-                            <li className="rounded-full px-3 py-2 hover:bg-gray-700 hover:text-white">Consumo</li>
-                            <li className="rounded-full px-3 py-2 hover:bg-gray-700 hover:text-white">Beneficios</li>
-                            <li className="rounded-full px-3 py-2 hover:bg-gray-700 hover:text-white">Mis Datos</li>
-                            <li className="rounded-full px-3 py-2 hover:bg-gray-700 hover:text-white">Log Out</li>    
+                    <div className="flex px-10">
+                        <ul className="flex space-4 gap-20 [&>li]:text-white [&>li]:font-bold">
+                            <li className=""><a href="">Boleta</a></li>
+                            <li className=""><a>Consumo</a></li>
+                            <li className=""><a>Beneficios</a></li>
+                            <li className=""><a>Mis Datos</a></li>
+                            <li className=""><a>Log Out</a></li>    
                         </ul>
                     </div>                
                 </nav>
