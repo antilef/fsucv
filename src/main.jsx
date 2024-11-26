@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginPage from './pages/LoginPage.jsx'
 import SigunUpPage from './pages/SignupPage.jsx'
 import HomePage from './pages/HomePage.jsx'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 const router = createBrowserRouter([
   {
